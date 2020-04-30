@@ -1,6 +1,18 @@
-Use this example to test the startup time of various [splash screens](https://docs.devexpress.com/WPF/DevExpress.Xpf.Core.SplashScreenManager?v=20.1) on your machine.
+To minimize the startup time, the Splash Screen Manager facilitates multiple performance enhancements. For example, it only partially loads the DevExpress Theme resources.
 
-Make sure to select the Release build type.
+Our tests on different PC configurations have shown the following figures.
+
+Without the [Ngen.exe](https://docs.devexpress.com/WPF/400286/common-concepts/performance-improvement/reducing-the-application-launch-time) optimization:
+
+Themed Splash Screen: 290-450 ms
+Fluent Splash Screen: 300-460 ms
+
+Compiled with Ngen.exe:
+
+Themed Splash Screen: 170-370 ms
+Fluent Splash Screen: 180-370 ms
+
+Use this example to test the startup time of various [splash screens](https://docs.devexpress.com/WPF/DevExpress.Xpf.Core.SplashScreenManager?v=20.1) on your machine.
 
 To change the splash screen type, uncomment one of the lines in App.xaml.cs and keep the other lines commented out.
 
