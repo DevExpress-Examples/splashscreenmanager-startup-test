@@ -50,7 +50,7 @@ Namespace SplashScreenStartupTest
 		End Sub
 
 		Public Shared Sub Test_LegacySplashScreen()
-			Dim splashScreenViewModel() As New SplashScreenViewModel() With {.IsIndeterminate = True}
+			Dim splashScreenViewModel As SplashScreenViewModel = New SplashScreenViewModel() With {.IsIndeterminate = True}
 			DXSplashScreen.Show(Function(x)
 				Dim w = DXSplashScreen.DefaultSplashScreenWindowCreator.Invoke(Nothing)
 				w.Topmost = False
