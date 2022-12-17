@@ -1,11 +1,12 @@
-﻿Imports DevExpress.Xpf.Core
+Imports DevExpress.Xpf.Core
 
 Namespace SplashScreenStartupTest
-	Partial Public Class CustomThemedSplashScreen
-		Inherits SplashScreenWindow
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
-	End Class
+    Public Partial Class CustomThemedSplashScreen
+        Inherits SplashScreenWindow
+
+        Public Sub New()
+            Me.InitializeComponent()
+        End Sub
+    End Class
 End Namespace
